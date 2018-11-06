@@ -7,29 +7,39 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class TabViewController: UITabBarController {
 
+    private let disposeBag = DisposeBag()
+
+    var button: UIButton {
+        let button = UIButton(type: .custom)
+        button.setBackgroundImage(UIImage(named: "Open"), for: .normal)
+        button.sizeToFit()
+        button.center = CGPoint(x: tabBar.bounds.size.width/2, y: tabBar.bounds.size.height - (button.bounds.size.height/2))
+        return button
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        bind()
     }
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
 
-        setupCenterButton()
-    }
-
-    private func setupCenterButton() {
-        let button = UIButton(type: .custom)
-        button.setBackgroundImage(UIImage(named: "Open"), for: .normal)
-        button.sizeToFit()
-        button.center = CGPoint(x: tabBar.bounds.size.width/2, y: tabBar.bounds.size.height - (button.bounds.size.height/2))
-        button.addTarget(self, action: #selector(tapCetnerButton(sender:)), for: .touchUpInside)
         tabBar.addSubview(button)
     }
 
-    @objc func tapCetnerButton(sender: Any) {
+    private func bind() {
+        button.rx.tap
+            .subscribe({ _ in
+
+            })
+            .disposed(by: disposeBag)
     }
     
 

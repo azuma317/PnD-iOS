@@ -36,6 +36,9 @@
 		756EB8C82191531E0067D433 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756EB8C6219153180067D433 /* KeychainAccess.framework */; };
 		756EB8C92191531E0067D433 /* KeychainAccess.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 756EB8C6219153180067D433 /* KeychainAccess.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		756EB8CB219153B90067D433 /* KeyChainUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EB8CA219153B90067D433 /* KeyChainUtil.swift */; };
+		756EB8CE219168C20067D433 /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756EB8CC219168BC0067D433 /* SwiftDate.framework */; };
+		756EB8CF219168C20067D433 /* SwiftDate.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 756EB8CC219168BC0067D433 /* SwiftDate.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		756EB8D22191691D0067D433 /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EB8D12191691D0067D433 /* DayCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +49,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				756EB8C92191531E0067D433 /* KeychainAccess.framework in Embed Frameworks */,
+				756EB8CF219168C20067D433 /* SwiftDate.framework in Embed Frameworks */,
 				756EB8AD21905C2C0067D433 /* RxCocoa.framework in Embed Frameworks */,
 				756EB8AB21905C270067D433 /* RxSwift.framework in Embed Frameworks */,
 				756EB8C1219138320067D433 /* Kingfisher.framework in Embed Frameworks */,
@@ -83,6 +87,8 @@
 		756EB8C2219138500067D433 /* JTAppleCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JTAppleCalendar.framework; path = Carthage/Build/iOS/JTAppleCalendar.framework; sourceTree = "<group>"; };
 		756EB8C6219153180067D433 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
 		756EB8CA219153B90067D433 /* KeyChainUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainUtil.swift; sourceTree = "<group>"; };
+		756EB8CC219168BC0067D433 /* SwiftDate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftDate.framework; path = Carthage/Build/iOS/SwiftDate.framework; sourceTree = "<group>"; };
+		756EB8D12191691D0067D433 /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				756EB8C82191531E0067D433 /* KeychainAccess.framework in Frameworks */,
+				756EB8CE219168C20067D433 /* SwiftDate.framework in Frameworks */,
 				756EB8AC21905C2C0067D433 /* RxCocoa.framework in Frameworks */,
 				756EB8AA21905C270067D433 /* RxSwift.framework in Frameworks */,
 				756EB8C0219138320067D433 /* Kingfisher.framework in Frameworks */,
@@ -143,6 +150,7 @@
 			children = (
 				756EB87121903B560067D433 /* CalendarViewController.swift */,
 				756EB87321903B5F0067D433 /* Calendar.storyboard */,
+				756EB8D0219169070067D433 /* View */,
 			);
 			path = CalendarView;
 			sourceTree = "<group>";
@@ -177,6 +185,7 @@
 		756EB8A321905BE20067D433 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				756EB8CC219168BC0067D433 /* SwiftDate.framework */,
 				756EB8C6219153180067D433 /* KeychainAccess.framework */,
 				756EB8C2219138500067D433 /* JTAppleCalendar.framework */,
 				756EB8BE219138280067D433 /* Kingfisher.framework */,
@@ -203,6 +212,14 @@
 				756EB8CA219153B90067D433 /* KeyChainUtil.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		756EB8D0219169070067D433 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				756EB8D12191691D0067D433 /* DayCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +308,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/JTAppleCalendar.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftDate.framework",
 			);
 			outputFileListPaths = (
 			);
@@ -317,6 +335,7 @@
 				756EB859219037DB0067D433 /* AppDelegate.swift in Sources */,
 				756EB87721903BB70067D433 /* GoodsViewController.swift in Sources */,
 				756EB8B2219122290067D433 /* String+Extension.swift in Sources */,
+				756EB8D22191691D0067D433 /* DayCell.swift in Sources */,
 				756EB8CB219153B90067D433 /* KeyChainUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,7 +497,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.PandD.P-D-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -501,7 +520,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.PandD.P-D-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

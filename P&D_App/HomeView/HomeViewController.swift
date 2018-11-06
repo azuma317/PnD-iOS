@@ -55,7 +55,6 @@ class HomeViewController: UIViewController {
 
         loginButton.rx.tap
             .subscribe({ _ in
-                // loginの処理
 //                self.warningLabel.isHidden = false
                 KeyChainUtil.shared.set(key: KeyChainKey.name, value: self.nameTextField.text!)
                 KeyChainUtil.shared.set(key: KeyChainKey.key, value: self.keyTextField.text!)
@@ -82,10 +81,7 @@ class HomeViewController: UIViewController {
     }
 
     private func isLogin() -> Bool {
-        if KeyChainUtil.shared.get(key: KeyChainKey.token) != nil {
-            return true
-        }
-        return false
+        return KeyChainUtil.shared.get(key: KeyChainKey.token) != nil ? true : false
     }
     
 
