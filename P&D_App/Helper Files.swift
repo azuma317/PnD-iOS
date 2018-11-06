@@ -6,4 +6,10 @@
 //  Copyright © 2018 P&D. All rights reserved.
 //
 
-import UIKit
+import Foundation
+
+public struct KeyChainKey {
+    public static let name = "name"
+    public static let key = "key"
+    public static let token = "token"
+}

@@ -82,10 +82,11 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oYN-9S-BiE">
-                            <rect key="frame" x="64" y="236.5" width="192" height="40"/>
+                            <rect key="frame" x="64" y="236.5" width="192" height="64"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="40" id="Mez-tz-gwY"/>
+                                <constraint firstAttribute="height" constant="64" id="Mez-tz-gwY"/>
                             </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
                             <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="Go"/>
                             <userDefinedRuntimeAttributes>
@@ -104,7 +105,7 @@
                             <rect key="frame" x="16" y="128" width="288" height="30"/>
                             <nil key="textColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                     <color key="value" name="Line"/>

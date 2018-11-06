@@ -21,7 +21,8 @@ class HomeViewController: UIViewController {
     @IBOutlet private weak var loginButton: UIButton!
     @IBOutlet private weak var warningLabel: UILabel!
 
-    private var isLogin: Bool = false
+    private var name: String = ""
+    private var key: String = ""
     private var loginViewTopConstraint: NSLayoutConstraint!
     private let disposeBag = DisposeBag()
 
@@ -38,7 +39,11 @@ class HomeViewController: UIViewController {
 
     private func initView() {
         bind()
-        customization()
+        if isLogin() {
+
+        } else {
+            customization()
+        }
     }
 
     private func bind() {
@@ -51,6 +56,10 @@ class HomeViewController: UIViewController {
         loginButton.rx.tap
             .subscribe({ _ in
                 // loginの処理
+//                self.warningLabel.isHidden = false
+                KeyChainUtil.shared.set(key: KeyChainKey.name, value: self.nameTextField.text!)
+                KeyChainUtil.shared.set(key: KeyChainKey.key, value: self.keyTextField.text!)
+                self.performSegue(withIdentifier: "HomeToTabSegue", sender: nil)
             })
             .disposed(by: disposeBag)
     }
@@ -58,7 +67,7 @@ class HomeViewController: UIViewController {
     private func customization() {
         logoTopConstraint.priority = UILayoutPriority(rawValue: 1000)
         logoHorizontalConstraint.priority = UILayoutPriority(rawValue: 999)
-        UIView.animate(withDuration: 1.5, delay: 0.5, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: 1.0, delay: 0.5, options: .curveEaseOut, animations: {
             self.view.layoutIfNeeded()
         }, completion: { _ in
             self.view.insertSubview(self.loginView, belowSubview: self.logoImageView)
@@ -70,6 +79,13 @@ class HomeViewController: UIViewController {
             self.loginView.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.8).isActive = true
             self.view.layoutIfNeeded()
         })
+    }
+
+    private func isLogin() -> Bool {
+        if KeyChainUtil.shared.get(key: KeyChainKey.token) != nil {
+            return true
+        }
+        return false
     }
     
 
