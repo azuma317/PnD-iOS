@@ -19,7 +19,33 @@
 		756EB88021904E070067D433 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EB87F21904E070067D433 /* HomeViewController.swift */; };
 		756EB88321904E550067D433 /* Tab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 756EB88221904E550067D433 /* Tab.storyboard */; };
 		756EB88521904EC10067D433 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EB88421904EC10067D433 /* TabViewController.swift */; };
+		756EB8AA21905C270067D433 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756EB8A821905BFD0067D433 /* RxSwift.framework */; };
+		756EB8AB21905C270067D433 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 756EB8A821905BFD0067D433 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		756EB8AC21905C2C0067D433 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756EB8A621905BF00067D433 /* RxCocoa.framework */; };
+		756EB8AD21905C2C0067D433 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 756EB8A621905BF00067D433 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		756EB8AE21905C2F0067D433 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756EB8A421905BE20067D433 /* RxAtomic.framework */; };
+		756EB8AF21905C2F0067D433 /* RxAtomic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 756EB8A421905BE20067D433 /* RxAtomic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		756EB8B2219122290067D433 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EB8B1219122290067D433 /* String+Extension.swift */; };
+		756EB8B921912D7B0067D433 /* Helper Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EB8B821912D7B0067D433 /* Helper Files.swift */; };
+		756EB8BB219130F80067D433 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EB8BA219130F80067D433 /* UIButton+Extension.swift */; };
+		756EB8BD219132C60067D433 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756EB8BC219132C60067D433 /* UITextField+Extension.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		756EB89B21905A9F0067D433 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				756EB8AD21905C2C0067D433 /* RxCocoa.framework in Embed Frameworks */,
+				756EB8AB21905C270067D433 /* RxSwift.framework in Embed Frameworks */,
+				756EB8AF21905C2F0067D433 /* RxAtomic.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		756EB855219037DB0067D433 /* P&D_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "P&D_App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +62,13 @@
 		756EB87F21904E070067D433 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		756EB88221904E550067D433 /* Tab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab.storyboard; sourceTree = "<group>"; };
 		756EB88421904EC10067D433 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		756EB8A421905BE20067D433 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = "<group>"; };
+		756EB8A621905BF00067D433 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		756EB8A821905BFD0067D433 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		756EB8B1219122290067D433 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		756EB8B821912D7B0067D433 /* Helper Files.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper Files.swift"; sourceTree = "<group>"; };
+		756EB8BA219130F80067D433 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		756EB8BC219132C60067D433 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +76,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				756EB8AC21905C2C0067D433 /* RxCocoa.framework in Frameworks */,
+				756EB8AA21905C270067D433 /* RxSwift.framework in Frameworks */,
+				756EB8AE21905C2F0067D433 /* RxAtomic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +90,7 @@
 			children = (
 				756EB857219037DB0067D433 /* P&D_App */,
 				756EB856219037DB0067D433 /* Products */,
+				756EB8A321905BE20067D433 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +110,9 @@
 				756EB88121904E3F0067D433 /* TabView */,
 				756EB86D21903AD00067D433 /* CalendarView */,
 				756EB87521903BA40067D433 /* GoodsView */,
+				756EB8B02191220F0067D433 /* Extension */,
+				756EB8B721912D610067D433 /* Common */,
+				756EB8B821912D7B0067D433 /* Helper Files.swift */,
 				756EB862219037DE0067D433 /* Assets.xcassets */,
 				756EB864219037DE0067D433 /* LaunchScreen.storyboard */,
 				756EB867219037DE0067D433 /* Info.plist */,
@@ -117,6 +157,33 @@
 			path = TabView;
 			sourceTree = "<group>";
 		};
+		756EB8A321905BE20067D433 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				756EB8A821905BFD0067D433 /* RxSwift.framework */,
+				756EB8A621905BF00067D433 /* RxCocoa.framework */,
+				756EB8A421905BE20067D433 /* RxAtomic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		756EB8B02191220F0067D433 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				756EB8B1219122290067D433 /* String+Extension.swift */,
+				756EB8BA219130F80067D433 /* UIButton+Extension.swift */,
+				756EB8BC219132C60067D433 /* UITextField+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		756EB8B721912D610067D433 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,6 +194,8 @@
 				756EB851219037DB0067D433 /* Sources */,
 				756EB852219037DB0067D433 /* Frameworks */,
 				756EB853219037DB0067D433 /* Resources */,
+				756EB89B21905A9F0067D433 /* Embed Frameworks */,
+				756EB8A221905ABF0067D433 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -186,17 +255,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		756EB8A221905ABF0067D433 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxAtomic.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		756EB851219037DB0067D433 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				756EB8B921912D7B0067D433 /* Helper Files.swift in Sources */,
 				756EB88521904EC10067D433 /* TabViewController.swift in Sources */,
 				756EB88021904E070067D433 /* HomeViewController.swift in Sources */,
 				756EB87221903B560067D433 /* CalendarViewController.swift in Sources */,
 				756EB861219037DB0067D433 /* P_D_App.xcdatamodeld in Sources */,
+				756EB8BD219132C60067D433 /* UITextField+Extension.swift in Sources */,
+				756EB8BB219130F80067D433 /* UIButton+Extension.swift in Sources */,
 				756EB859219037DB0067D433 /* AppDelegate.swift in Sources */,
 				756EB87721903BB70067D433 /* GoodsViewController.swift in Sources */,
+				756EB8B2219122290067D433 /* String+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,7 +440,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CWW3CV2X72;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "P&D_App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,7 +463,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CWW3CV2X72;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "P&D_App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

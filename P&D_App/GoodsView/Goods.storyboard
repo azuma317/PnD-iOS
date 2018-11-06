@@ -36,7 +36,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1h6-Wp-qV8"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Goods" image="Goods" id="GJn-38-l37"/>
                     <navigationItem key="navigationItem" title="Goods" id="uZF-M1-0Zs"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="hOe-gw-Ljh" kind="presentation" identifier="GoodsToCalendarSegue" id="rHj-JV-FWf"/>
                     </connections>
@@ -54,4 +56,7 @@
             <point key="canvasLocation" x="806" y="175"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Goods" width="24" height="24"/>
+    </resources>
 </document>

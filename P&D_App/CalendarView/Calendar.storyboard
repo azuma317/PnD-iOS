@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="-726" y="191"/>
         </scene>
-        <!--Calendar View Controller-->
+        <!--Calendar-->
         <scene sceneID="ESs-h6-2SB">
             <objects>
                 <viewController id="VMh-rJ-tnm" customClass="CalendarViewController" customModule="P_D_App" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,7 +36,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hkx-Fw-tEy"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="Calendar" id="BpJ-fV-ZuW"/>
                     <navigationItem key="navigationItem" id="xTV-ZQ-u5Y"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="D4O-R4-Qmp" kind="presentation" identifier="CalendarToGoodsSegue" id="uzL-bs-Pn0"/>
                     </connections>
@@ -54,4 +56,7 @@
             <point key="canvasLocation" x="847" y="190"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Calendar" width="24" height="24"/>
+    </resources>
 </document>
